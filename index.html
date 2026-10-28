@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <meta name="description" content="Personal portfolio" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a href="#home" class="logo" id="logo"></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">☕ Hi, I'm</p>
+        <h1 id="hero-name"></h1>
+        <h2 id="hero-title"></h2>
+        <p id="hero-tagline" class="tagline"></p>
+        <div class="buttons">
+          <a href="#projects" class="btn">View my work</a>
+          <a href="#" id="resume-btn" class="btn btn-outline" download>Resume</a>
+        </div>
+      </div>
+
+      <!-- Java code window, built automatically by script.js -->
+      <div class="code-window" id="code-window" aria-hidden="true"></div>
+    </section>
+
+    <section id="about">
+      <h3 class="section-title"><span>01.</span> About me</h3>
+      <div class="about-card">
+        <p class="about-label">// who am i</p>
+        <p id="about-text"></p>
+        <p class="skills-title">Tech stack</p>
+        <ul id="skills" class="chips"></ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h3 class="section-title"><span>02.</span> Projects</h3>
+      <div id="project-grid" class="grid"></div>
+    </section>
+
+    <section id="contact">
+      <h3 class="section-title"><span>03.</span> Contact</h3>
+      <div class="contact-card">
+        <p class="contact-label">// get in touch</p>
+        <a id="contact-email" class="contact-email" href="#"></a>
+        <div id="contact-links" class="buttons"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> <span id="footer-name"></span> · Built with ☕ HTML, CSS &amp; JavaScript</p>
+    <a href="#home" class="to-top">Back to top ↑</a>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
